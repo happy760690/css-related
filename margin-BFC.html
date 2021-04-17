@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+	<style>
+		*{ 
+			margin:0; 
+			padding:0;
+			box-sizing: content-box;
+			/* position: absolute; */
+		}
+		.a1{
+			width: 100px;
+			height: 100px;
+			padding:20px;
+			margin: 20px;
+			border: 1px solid #000;
+			/* position: relative; */
+		}
+		.a2{ 
+			box-sizing: border-box;
+			width:100px;
+			height:100px;
+			padding:20px;
+			margin: 20px;
+			border: 1px solid #000;
+			/* overflow:hidden; */
+		}
+        .bfc-test{
+            overflow:hidden;
+        }
+	</style>
+</head>
+<body>
+
+<div class="container" id='container'>
+	<div class="a1" id="a1"></div>
+	<div class="bfc-test">
+		<div class="a2" id="a2"></div>
+	</div>
+</div>
+</body>
+</html>

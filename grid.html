@@ -1,0 +1,45 @@
+<html>
+<head>
+    <style type="text/css">
+        .content {
+            padding: 10;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            height: 780px;   
+            /* background-color: #000; */
+            grid-gap: 10px;
+        }
+        .b {
+            background-color: yellow;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            /*grid-template-areas: 'a b c'*/
+            /*'d e f'*/
+            /*'g h i';*/
+            grid-template-areas: 'a . c'
+            'd . f'
+            'g . i';
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+</div>
+<div class="content">
+    <div class="b">1</div>
+    <div class="b">2</div>
+    <div class="b">3</div>
+    <div class="b">4</div>
+    <div class="b">5</div>
+    <div class="b">6</div>
+    <div class="b">7</div>
+    <div class="b">8</div>
+    <div class="b">9</div>
+</div>
+</body>
+</html>
